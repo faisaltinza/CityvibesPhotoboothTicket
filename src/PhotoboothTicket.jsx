@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import html2canvas from "html2canvas";
+import frameImage from "./assets/Frame.svg";
 
 export default function PhotoboothTicket() {
   const ticketRef = useRef(null);
@@ -82,7 +83,7 @@ export default function PhotoboothTicket() {
       <section className="mx-auto w-full max-w-md overflow-hidden border border-[#e9e2d6] bg-white shadow-[0_12px_45px_-25px_rgba(40,32,20,0.25)]">
         <header className="border-b border-[#eee8de] px-6 pb-5 pt-7 text-center">
           <div className="text-[29px] font-semibold tracking-[-1.4px] text-[#171613]">
-            CITYVIBES
+             <img src={frameImage}/>
           </div>
 
           <div className="mx-auto mt-3 flex items-center justify-center gap-2">

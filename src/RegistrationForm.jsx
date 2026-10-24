@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import authService from "./appwrite/auth.js";
+import frameImage from "./assets/Frame.svg";
 
 const professions = [
   "Student",
@@ -130,8 +131,10 @@ export default function RegistrationForm() {
             className="inline-block text-[29px] font-semibold tracking-[-1.4px] text-[#171613]"
             aria-label="Cityvibes"
           >
-            CITYVIBES
+            <img src={frameImage}/>
+          
           </a>
+          
 
           <div className="mx-auto mt-3 flex items-center justify-center gap-2">
             <span className="h-px w-7 bg-[#b49a6a]" />
